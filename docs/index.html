@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历 - 计算机科学与技术</title>
+    <title>陆文涛 - 个人简历</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -315,6 +315,38 @@
             font-size: 0.95rem;
         }
         
+        /* 进度条技能展示 */
+        .skill-bar-container {
+            margin-bottom: 15px;
+        }
+        
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .skill-label {
+            font-weight: 500;
+        }
+        
+        .skill-percentage {
+            color: #7f8c8d;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 4px;
+        }
+        
         /* 底部装饰 */
         .footer {
             text-align: center;
@@ -379,7 +411,7 @@
             <div class="name-title">
                 <div>
                     <div class="name">陆文涛</div>
-                    <div class="title">计算机科学与技术</div>
+                    <div class="title">计算机科学与技术 | 人工智能与医学影像分析</div>
                 </div>
             </div>
             <div class="contact-info">
@@ -447,6 +479,8 @@
                                 <span class="tech-item">U-Net</span>
                                 <span class="tech-item">3D重建</span>
                                 <span class="tech-item">数据增强</span>
+                                <span class="tech-item">OpenCV</span>
+                                <span class="tech-item">TensorFlow</span>
                             </div>
                         </div>
                     </div>
@@ -463,9 +497,10 @@
                         <div class="position">干事</div>
                         <div class="project-details">
                             <div class="achievements">
-                                <div class="achievement-item">积极参与学生会的各项活动，与其他干事一起参与各类学生活动的策划</div>
-                                <div class="achievement-item">完成学生会工作任务，包括组织举行新春晚会、分发宣传重要资讯</div>
-                                <div class="achievement-item">协助大使馆收集需要的信息问卷，促进留学生与大使馆之间的沟通</div>
+                                <div class="achievement-item">参与策划和组织多场大型活动，包括新春晚会、文化交流活动等</div>
+                                <div class="achievement-item">负责重要资讯的分发与宣传，确保信息准确及时传达</div>
+                                <div class="achievement-item">协助大使馆完成信息收集工作，促进留学生与大使馆的沟通</div>
+                                <div class="achievement-item">协调解决留学生日常问题，提升留学生活体验</div>
                             </div>
                         </div>
                     </div>
@@ -473,50 +508,81 @@
                     <div class="experience-item">
                         <div class="exp-header">
                             <div class="company">接待中国大学教授访问团</div>
-                            <div class="date">2024.09 - 2024.10</div>
+                            <div class="date">2024.09</div>
                         </div>
                         <div class="position">本科生代表</div>
                         <div class="project-details">
                             <div class="achievements">
-                                <div class="achievement-item">经白俄罗斯导师推荐，作为团队中唯一的本科生（其余五名成员均为研究生及博士生），深度参与接待中国东南大学来访教授的代表团活动</div>
-                                <div class="achievement-item">访问涵盖白俄罗斯国立大学、白俄罗斯国家科学院等多个重要学术机构</div>
-                                <div class="achievement-item">与中国教授就相关领域进行深入交流与探讨，成功促成两位导师之间的直接学术对话</div>
-                                <div class="achievement-item">推动双方建立长期学术合作，包括互访机制和实质性科研合作计划</div>
+                                <div class="achievement-item">作为唯一本科生代表参与接待东南大学来访教授代表团</div>
+                                <div class="achievement-item">陪同访问白俄罗斯国立大学、白俄罗斯国家科学院等学术机构</div>
+                                <div class="achievement-item">促成中白导师学术对话，推动双方建立长期合作关系</div>
+                                <div class="achievement-item">参与学术交流讨论，展示研究成果并获得积极反馈</div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            </div> <!-- 结束左栏 -->
             
             <div class="right-column">
                 <!-- 专业技能 -->
                 <div class="section">
                     <h2 class="section-title"><i class="fas fa-code"></i> 专业技能</h2>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span class="skill-label">Python (AI/数据分析)</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span class="skill-label">C++ (算法/系统)</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span class="skill-label">Java (Web开发)</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
                     <div class="skills-container">
                         <div class="skill-category">
-                            <div class="skill-name"><i class="fas fa-laptop-code"></i> 编程语言</div>
+                            <div class="skill-name"><i class="fas fa-brain"></i> AI框架</div>
                             <div class="skill-items">
-                                <span class="skill-tag">C++</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">Keras</span>
                             </div>
                         </div>
                         
                         <div class="skill-category">
-                            <div class="skill-name"><i class="fas fa-brain"></i> 人工智能</div>
+                            <div class="skill-name"><i class="fas fa-database"></i> 数据处理</div>
                             <div class="skill-items">
-                                <span class="skill-tag">神经网络</span>
-                                <span class="skill-tag">机器学习</span>
-                                <span class="skill-tag">医学影像分析</span>
+                                <span class="skill-tag">Pandas</span>
+                                <span class="skill-tag">NumPy</span>
+                                <span class="skill-tag">OpenCV</span>
                             </div>
                         </div>
                         
                         <div class="skill-category">
-                            <div class="skill-name"><i class="fas fa-cogs"></i> 开发技能</div>
+                            <div class="skill-name"><i class="fas fa-laptop"></i> 开发工具</div>
                             <div class="skill-items">
-                                <span class="skill-tag">算法设计</span>
-                                <span class="skill-tag">数据结构</span>
-                                <span class="skill-tag">Web编程</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">VS Code</span>
                             </div>
                         </div>
                         
@@ -526,6 +592,7 @@
                                 <span class="skill-tag">Word</span>
                                 <span class="skill-tag">Excel</span>
                                 <span class="skill-tag">PowerPoint</span>
+                                <span class="skill-tag">LaTeX</span>
                             </div>
                         </div>
                     </div>
@@ -534,17 +601,46 @@
                 <!-- 语言能力 -->
                 <div class="section">
                     <h2 class="section-title"><i class="fas fa-language"></i> 语言能力</h2>
-                    <div class="language-item">
-                        <div class="language-name">中文</div>
-                        <div class="language-level">母语</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span class="skill-label">中文（母语）</span>
+                            <span class="skill-percentage">100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
                     </div>
-                    <div class="language-item">
-                        <div class="language-name">英语</div>
-                        <div class="language-level">熟练</div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span class="skill-label">英语（流利）</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
                     </div>
-                    <div class="language-item">
-                        <div class="language-name">俄语</div>
-                        <div class="language-level">熟练</div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span class="skill-label">俄语（专业）</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 核心优势 -->
+                <div class="section">
+                    <h2 class="section-title"><i class="fas fa-star"></i> 核心优势</h2>
+                    <div class="achievements">
+                        <div class="achievement-item">扎实的计算机科学与AI专业知识，主修神经网络与机器学习</div>
+                        <div class="achievement-item">医学影像分析项目经验，具备实际科研能力</div>
+                        <div class="achievement-item">多语言沟通能力（中/英/俄），跨文化交流经验丰富</div>
+                        <div class="achievement-item">学术活动组织经验，曾促成国际学术合作</div>
+                        <div class="achievement-item">快速学习能力，能高效解决复杂技术问题</div>
                     </div>
                 </div>
                 
@@ -558,26 +654,19 @@
                             <div class="info-value">C2</div>
                         </div>
                         <div class="info-card">
-                            <i class="fas fa-calendar-check"></i>
+                            <i class="fas fa-graduation-cap"></i>
                             <div class="info-title">毕业时间</div>
                             <div class="info-value">2025.06</div>
                         </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="info-title">工作地点</div>
+                            <div class="info-value">全国范围</div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- 核心优势 -->
-                <div class="section">
-                    <h2 class="section-title"><i class="fas fa-star"></i> 核心优势</h2>
-                    <div class="achievements">
-                        <div class="achievement-item">扎实的计算机科学与技术专业知识</div>
-                        <div class="achievement-item">医学影像分析领域的项目经验</div>
-                        <div class="achievement-item">多语言沟通能力（中/英/俄）</div>
-                        <div class="achievement-item">跨文化交流与国际合作经验</div>
-                        <div class="achievement-item">优秀的学术与组织协调能力</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div> <!-- 结束右栏 -->
+        </div> <!-- 结束内容 -->
         
         <div class="footer">
             <p>更新于 2025年6月 | 个人简历</p>
@@ -592,11 +681,24 @@
             sections.forEach(section => {
                 section.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.15)';
                 });
                 
                 section.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
                 });
+            });
+            
+            // 添加技能条动画
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 1.5s ease-in-out';
+                    bar.style.width = width;
+                }, 300);
             });
         });
     </script>
